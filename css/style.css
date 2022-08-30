@@ -256,9 +256,7 @@ body {
     .stuff-box {
         width: 100%;
         margin: 16px 0;
-    }
-
-    
+    }  
 
 }
 
@@ -306,6 +304,8 @@ body {
     display: flex;
     padding-top: 48px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .stuff-recently-box {
@@ -361,6 +361,43 @@ body {
     display: block;
     width: 100%;
 }
+
+
+/* Responsive stuff recently start */
+
+@media only screen and (max-width: 600px) {   /* big smartphones [426px -> 600px] */
+
+    .stuff-recently {
+        margin: 16px;
+    }
+
+
+    .stuff-recently-wrapper {
+        display: block;
+    }
+
+    .stuff-recently-box {
+        width: 100%;
+        margin: 16px 0;
+    }  
+
+}
+
+@media only screen and (max-width: 1200px) {  /* tablets [601px -> 1200px] */
+
+    .stuff-recently {
+        margin: 16px;
+    }
+
+    .stuff-recently-box {
+        margin: 0 auto;
+        width: 350px;
+    }
+
+}
+
+/* Responsive stuff recently end */
+
 /* End stuff recently section */
 
 
